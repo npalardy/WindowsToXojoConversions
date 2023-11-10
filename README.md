@@ -1,4 +1,5 @@
 ***Windows APIs to Xojo data type conversion***
+
 Here is a list of Windows types related to their Xojo equivalent, this is useful when you perform a Declare in Xojo.
 
 Rule of thumb: ByRef and ByVal are only applicable to intrinsic data types (Integer, String, Double, Structures etc.) All arrays and object types are reference types, effectively behaving as if ByRef was used with an intrinsic data type.
