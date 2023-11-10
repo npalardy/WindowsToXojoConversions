@@ -1,10 +1,15 @@
 ***Windows APIs to Xojo data type conversion***
 Here is a list of Windows types related to their Xojo equivalent, this is useful when you perform a Declare in Xojo.
+
 Rule of thumb: ByRef and ByVal are only applicable to intrinsic data types (Integer, String, Double, Structures etc.) All arrays and object types are reference types, effectively behaving as if ByRef was used with an intrinsic data type.
+
 If a parameter specifies OUT and is an intrinsic data type then it will need a ByRef so the value can be modified.
+
 Remember: If you are calling a 32bit library from a 64bit application you may need to use use Int32 instead of Integer and UInt32 instead of UInteger.
+
 Key: ? needs confirmation
 
+```
 Data type             Xojo type         Code
 ACCESS_MASK           UInt32            name As UInt32
 APIENTRY                                See WINAPI
@@ -271,6 +276,6 @@ STDAPIV
 STDAPIV_(type)
 STDMETHODIMPV
 STDMETHODIMPV_(type)
-
+```
 
 
